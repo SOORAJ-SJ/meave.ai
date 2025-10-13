@@ -46,6 +46,7 @@ body {
 main {
 	width: 720px;
 	max-width: calc(100% - 2em);
+	min-height: 50vh;	
 	margin: auto;
 	padding: 3em 1em;
 }
@@ -152,4 +153,21 @@ hr {
 	clip-path: inset(50%);
 	/* added line to stop words getting smushed together (as they go onto separate lines and some screen readers do not understand line feeds as a space */
 	white-space: nowrap;
+}
+
+.button {
+	font-size: 1rem;;
+	background-color: var(--accent);
+	color: white;
+	border: none;
+	border-radius: 0.5rem;
+	padding: 1rem;
+	cursor: pointer;
+	text-decoration: none;
+	transition: background-color 0.3s ease;
+}
+
+.button:hover {
+	color: white;
+    background-color: var(--accent-dark);
 }
